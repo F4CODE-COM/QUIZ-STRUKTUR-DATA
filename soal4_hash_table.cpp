@@ -1,9 +1,3 @@
-// Soal 4: Pengelolaan Data Mahasiswa Menggunakan Hash Table
-// Ukuran 20, Double Hashing: Hash1 = key % 20, Hash2 = 19 - (key % 19)
-// Index ke-i = (Hash1 + i * Hash2) % 20
-// Catatan: karena 20 bukan bilangan prima, key dengan Hash2 genap/kelipatan 5
-// (mis. NIM 2024022 -> Hash2 = 10) hanya menjangkau sebagian slot, sehingga insert
-// bisa gagal walau tabel belum penuh. Program membatasi probing maksimal 20 kali.
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -54,7 +48,7 @@ public:
         return false;
     }
 
-    // return indeks atau -1
+    
     int search(long long nim) {
         for (int i = 0; i < UKURAN; i++) {
             int idx = indeks(nim, i);
