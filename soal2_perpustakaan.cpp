@@ -1,10 +1,7 @@
-// Soal 2: Sistem Antrean dan Pengelolaan Buku Perpustakaan
-// Queue (FIFO) antrean peminjam, Stack (LIFO) riwayat pengembalian, BST ID buku
 #include <iostream>
 #include <string>
 using namespace std;
 
-// ---------- Queue (Linked List, FIFO) ----------
 struct NodeQ { string nama; NodeQ* next; };
 class Queue {
     NodeQ *depan, *belakang;
@@ -33,7 +30,7 @@ public:
     }
 };
 
-// ---------- Stack (Linked List, LIFO) ----------
+// STACK
 struct NodeS { int idBuku; string judul; NodeS* next; };
 class Stack {
     NodeS* top;
@@ -52,7 +49,7 @@ public:
     }
 };
 
-// ---------- Binary Search Tree ID Buku ----------
+// BST
 struct NodeT { int id; NodeT *kiri, *kanan; };
 class BST {
     NodeT* root;
