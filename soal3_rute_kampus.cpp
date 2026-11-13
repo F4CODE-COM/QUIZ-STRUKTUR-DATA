@@ -1,6 +1,3 @@
-// Soal 3: Sistem Pencarian Rute di Lingkungan Kampus
-// Graph (Adjacency Matrix) 6 vertex A-F, BFS, DFS, Dijkstra
-#include <iostream>
 #include <iomanip>
 #include <string>
 #include <queue>
@@ -12,7 +9,7 @@ const int N = 6;
 const int INF = 1000000;
 const char NAMA[N] = {'A', 'B', 'C', 'D', 'E', 'F'};
 
-int graf[N][N];  // 0 = tidak ada sisi
+int graf[N][N]; 
 
 void tambahSisi(int u, int v, int w) { graf[u][v] = graf[v][u] = w; }
 
